@@ -1,0 +1,83 @@
+.elements--box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  padding-top: 77px;
+}
+
+.elements--box .elements--box--item {
+  flex: 1 0 45%;
+  box-sizing: border-box;
+  color: #171e42;
+  width: 165px;
+  height: 141px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+}
+
+.elements--box .elements--box--item.active {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.elements--box .elements--box--item .item-content-wrap {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  border: 3px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.elements--box .elements--box--item.active .item-content-wrap {
+  border: 3px solid #1e47ba;
+}
+
+.elements--box .elements--box--item:nth-child(odd) {
+  margin-right: 15px;
+}
+
+.elements--box--item .itemNumber {
+  position: absolute;
+  left: 0;
+  display: block;
+  color: #fff;
+  background-color: #1e47ba;
+  top: 0;
+  left: -3px;
+  width: 32px;
+  height: 25px;
+  transform: skew(-15deg);
+  z-index: 9;
+}
+
+.elements--box--item .itemNumber > span {
+  width: 32px;
+  height: 22px;
+  transform: skew(15deg);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper--items {
+  height: 100%;
+  overflow: auto;
+}
+
+.item-logo {
+  max-width: 115px;
+}
+
+.item-logo > img {
+  width: 100%;
+}
+
+.elements--box--item.disabled {
+  opacity: 0.3;
+}

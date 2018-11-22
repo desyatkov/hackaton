@@ -1,0 +1,26 @@
+.popup--comparion {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateY(100%);
+  transition: transform 400ms ease-out;
+}
+
+.popup--comparion.show {
+  transform: translateY(0%);
+}
+
+.popup--comparion.step2 {
+  transform: translateY(0) translateX(-100%);
+}
+.popup--comparion.show {
+  transform: translateY(0) translateX(0%);
+}
+.close-popup {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
